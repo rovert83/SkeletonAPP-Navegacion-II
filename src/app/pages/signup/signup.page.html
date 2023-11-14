@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-content [fullscreen]="true">
+    <div>
+      <ion-title size="large">Nueva Cuenta</ion-title>
+      <p class="ion-padding">Inicia tu registro</p>
+    </div>
+  
+    <form>
+      <div class="ion-padding">
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input ngModel type="person-outline" name="person-outline"></ion-input>
+        <ion-icon name="person-outline" slot="end"></ion-icon>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Apellido</ion-label>
+        <ion-input ngModel type="person-outline" name="person-outline"></ion-input>
+        <ion-icon name="person-outline" slot="end"></ion-icon>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input ngModel type="password" name="password"></ion-input>
+        <ion-icon name="lock-closed-outline" slot="end"></ion-icon>
+      </ion-item>
+  
+      <ion-button type="submit" expand="block" color="danger" class="ion-text-uppercase ion-margin-top">Registrar
+      </ion-button>
+    </div>
+    </form>
+  
+    <ion-item>
+      <p>Ya estas registrado? <a [routerLink]="['/login']">Ingresa ahora</a></p>
+    </ion-item>
+  
+  
+  
+  
+  
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">singup</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </ion-content>
+  
+

@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-title size="large">Bienvenido de nuevo</ion-title>
+    <p class="ion-padding">Inicia sesión para acceder</p>
+  </div>
+
+  <form>
+    <div class="ion-padding">
+      <ion-item>
+        <ion-input label="Solid input" label-placement="floating" fill="solid" placeholder="Enter text">
+          <ion-icon name="person-outline" slot="end"></ion-icon>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input label="Solid input" label-placement="floating" fill="solid" placeholder="Enter text">
+          <ion-icon name="lock-closed-outline" slot="end"></ion-icon>
+        </ion-input>
+      </ion-item>
+    </div>
+  </form>
+
+
+  <form>
+    <div class="ion-padding">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input ngModel type="email" name="email"></ion-input>
+      <ion-icon name="mail" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input ngModel type="password" name="password"></ion-input>
+      <ion-icon name="lock-closed-outline" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-button type="submit" expand="block" color="danger" class="ion-text-uppercase ion-margin-top">Login
+    </ion-button>
+  </div>
+  </form>
+
+
+
+
+
+  <ion-item>
+    <a [routerLink]="['/reset-password']">Olvidaste tu password?</a>
+  </ion-item>
+
+  <ion-item>
+    <p>Nuevo? <a [routerLink]="['/signup']">Registrar</a></p>
+  </ion-item>
+
+
+
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
