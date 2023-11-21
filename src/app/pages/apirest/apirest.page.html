@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>apirest test semana 5</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+  <ion-card-header collapse="condense">
+    <ion-item>
+      <ion-select placeholder="Selección" [compareWhit]="compareWith" [(ngModel)]="user">
+        <ion-select-option *ngFor="usuarios" [value]="usu">{{usu.name}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-card-header>
+</ion-card>
+
+<br>
+
+<ion-card>
+  <ion-card-header collapse="condense">
+    <ion-item class="ion-padding">
+      <ion-label></ion-label>
+      <ion-input [(ngModel)]="post.title"></ion-input>
+    </ion-item>
+  </ion-card-header>
+</ion-card>
+
+
+
+
+
+
+
+
+
+
+
+</ion-content>
